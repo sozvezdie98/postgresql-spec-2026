@@ -1,50 +1,64 @@
-# Byte-compiled / optimized / DLL files
+# Python
 __pycache__/
 *.py[cod]
 *$py.class
-
-# Virtual environments
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
 venv/
 .venv/
-env/
+pip-log.txt
+pip-delete-this-directory.txt
+.tox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.log
+.git
+.mypy_cache
+.pytest_cache
+.hypothesis
+htmlcov/
+
+# Virtualenv
 ENV/
+env/
+venv/
 
-# PyInstaller
-*.manifest
-*.spec
-dist/
-build/
-
-# IDEs
+# IDE
 .idea/
 .vscode/
 *.swp
 *.swo
 
-# Testing
-.pytest_cache/
-.coverage
-htmlcov/
-.tox/
+# OS
+.DS_Store
+Thumbs.db
 
-# PostgreSQL local
-*.sql
-*.dump
+# PostgreSQL local data & dumps
 pgdata/
 postgres/
 postgresql/
-*.log
-*.pid
-*.sock
+*.sql
+*.dump
+*.backup
+*.psql
 
-# Secrets & environment
+# Secrets
 .env
 .env.local
 .env.*.local
+config/database.yml
 
-# Database files
-db/*.sqlite3
+# SQLite (если вдруг используешь для тестов)
 *.db
+*.sqlite3
+*.sqlite
 
 # Docker
 docker-compose.override.yml
